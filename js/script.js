@@ -17,8 +17,14 @@ const textsList=[
     "questo è il terzo paragrafo",
     "questo è il penultimo paragrafo",
     "questo è l'ultimo paragrafo",
-]
-
+];
+const imgList=[
+    "url(../img/margherita.jpg)",
+    "url(../img/capricciosa.jpg)",
+    "url(../img/quattro_stagioni.jpg)",
+    "url(../img/salame.jpg)",
+    "url(../img/tonno_e_cipolla.jpg)"
+];
 
 //pulsanti
 const next=document.getElementById("next");
@@ -42,6 +48,7 @@ next.addEventListener("click",function(){
     }
     title.textContent=titlesList[counter];
     text.textContent=textsList[counter];
+    box.style.backgroundImage=imgList[counter];
 
 })
 

@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
-}
-
 .container{
 
     display: flex;
@@ -17,16 +13,21 @@ body{
     height: 500px;
     border:1px solid black;
     margin:40px auto;
+   
 }
 
 .box{
-
+    
     text-align: center;
     border:1px solid black;
     width: 400px;
     height: 240px;
     margin:10px;
     border-radius: 10px;
+
+    background-image: url("../img/margherita.jpg");
+    background-size: cover;
+     
 }
 .title,.text{
     margin-top: 60px;
