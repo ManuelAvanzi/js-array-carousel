@@ -4,5 +4,30 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aqua;
+    
+}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 80%;
+    height: 500px;
+    border:1px solid black;
+    margin:40px auto;
+}
+
+.box{
+
+    text-align: center;
+    border:1px solid black;
+    width: 400px;
+    height: 240px;
+    margin:10px;
+    border-radius: 10px;
+}
+.title,.text{
+    margin-top: 60px;
 }
