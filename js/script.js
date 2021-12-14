@@ -19,11 +19,11 @@ const textsList=[
     "questo è l'ultimo paragrafo",
 ];
 const imgList=[
-    "url(../img/margherita.jpg)",
-    "url(../img/capricciosa.jpg)",
-    "url(../img/quattro_stagioni.jpg)",
-    "url(../img/salame.jpg)",
-    "url(../img/tonno_e_cipolla.jpg)"
+    "url(./img/margherita.jpg)",
+    "url(./img/capricciosa.jpg)",
+    "url(./img/quattro_stagioni.jpg)",
+    "url(./img/salame.jpg)",
+    "url(./img/tonno_e_cipolla.jpg)"
 ];
 
 //pulsanti
