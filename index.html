@@ -4,29 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
 
     <div class="container">
-
-        <!-- <img src="./img/margherita.jpg" alt=""> -->
-
-        <button id="previous">PREVIOUS</button>
-
-           <div class="box" id="box">
-               <h1 class="title" id="title">titolo uno</h1>
-              
-               <p class="text" id="text">
-                   questo è il primo paragrafo
-                </p>
-           </div>
-
-           <button id="next">NEXT</button>
-    </div>
-
-    <script src="js/script.js"></script>
-</body>
-</html>
+        <div class="mySlides">
+            
+            <img id="image" src="./img/margherita.jpg">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" id="prev">&#10094;</a>
+        <a class="next" id="next">&#10095;</a>
+      
+        <!-- Image text -->
+        <div class="caption-container">
+          <h1 id="title">margherita</h1>
+          <p id="text">la grande classica</p>
+        </div>
+      
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column" >
+            <img class="demo cursor" id="0" src="./img/margherita.jpg" >
+          </div>
+          <div class="column" >
+            <img class="demo cursor" id="1" src="./img/capricciosa.jpg" >
+          </div>
+          <div class="column" >
+            <img class="demo cursor" id="2" src="./img/salame.jpg" >
+          </div>
+          <div class="column">
+            <img class="demo cursor"  id="3" src="./img/tonno_e_cipolla.jpg" >
+          </div>
+          <div class="column" >
+            <img class="demo cursor"  id="4" src="./img/quattro_stagioni.jpg" >
+          </div>
+          <div class="column" >
+            <img class="demo cursor"  id="5" src="./img/margherita.jpg">
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+          <script src="js/script.js"></script>
+      </body>
+      </html>

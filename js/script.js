@@ -1,43 +1,47 @@
 
-
-
-
-//creo due liste contententi titoli e paragrafi
-
+// titles list
 const titlesList=[
-    "titolo uno",
-    "titolo due",
-    "titolo tre",
-    "titolo quattro",
-    "titolo cinque"
+    "Margherita",
+    "Capricciosa",
+    "Quattro stagioni",
+    "Salame",
+    "Tonno e cipolle",
+    "Speck e rucola",
 ];
+// texts list 
 const textsList=[
-    "questo è il primo paragrafo ",
-    "questo invece è il secondo paragrafo",
-    "questo è il terzo paragrafo",
-    "questo è il penultimo paragrafo",
-    "questo è l'ultimo paragrafo",
+    "la grande classica ",
+    "capricci in pizzeria",
+    "come l'opera di Vivaldi",
+    "Piccante è meglio ",
+    "il meglio per l'alito",
+    "Gigi Finizio"
 ];
+// images list 
 const imgList=[
-    "url(./img/margherita.jpg)",
-    "url(./img/capricciosa.jpg)",
-    "url(./img/quattro_stagioni.jpg)",
-    "url(./img/salame.jpg)",
-    "url(./img/tonno_e_cipolla.jpg)"
+    "./img/margherita.jpg",
+    "./img/capricciosa.jpg",
+    "./img/quattro_stagioni.jpg",
+    "./img/salame.jpg",
+    "./img/tonno_e_cipolla.jpg",
+    "./img/speck&rucola.jpg"
 ];
 
-//pulsanti
+//buttons
 const next=document.getElementById("next");
-const prev=document.getElementById("previous");
+const prev=document.getElementById("prev");
 
-//la mia box
-const box=document.getElementById("box");
+//main image
+const image=document.getElementById("image");
 
-//titolo e testi presenti nella box
+//main title texts
 const title=document.getElementById("title");
 const text=document.getElementById("text");
 
-// variabile che fa da contatore ,inizializzata a 0 
+//thumb images saved in a list
+const thumb=document.querySelectorAll(".demo");
+
+// counter set to 0
 let counter=0;
 
 next.addEventListener("click",function(){
@@ -48,8 +52,7 @@ next.addEventListener("click",function(){
     }
     title.textContent=titlesList[counter];
     text.textContent=textsList[counter];
-    box.style.backgroundImage=imgList[counter];
-
+    image.src=imgList[counter];
 })
 
 prev.addEventListener("click",function(){
@@ -62,8 +65,24 @@ prev.addEventListener("click",function(){
     
     title.textContent=titlesList[counter];
     text.textContent=textsList[counter];
-
+    image.src=imgList[counter];
 })
 
 
+for(let element of thumb){
+    element.addEventListener("click",function(){
 
+        //show me some usefull details
+        console.log(element.src);
+        
+        
+        // i thought that was briliant
+        image.src=element.src;
+        
+        //till i discovered this
+        console.log(element.id)
+
+        title.textContent=titlesList[element.id];
+        text.textContent=textsList[element.id];
+});
+}
